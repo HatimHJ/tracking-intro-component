@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<title>Project tracking intro component ✨</title>
+	</head>
+	<body>
+		<!-- intro -->
+		<section class="intro">
+			<h1 class="sr-only">tracking intro component</h1>
+			<!-- navbar -->
+			<header class="header">
+				<!-- header -->
+				<div class="container">
+					<!-- logo -->
+					<a href="/" class="logo" aria-label="homepage link">
+						<span class="sr-only">go to homepage </span>
+						<img src="./images/logo.svg" alt="" aria-hidden="true" />
+					</a>
+					<!-- toggler -->
+					<button id="toggler" class="btn nav-toggler">
+						<!-- <img src="./images/icon-hamburger.svg" alt="" /> -->
+						<span class="burger-icon"></span>
+					</button>
+					<!-- nav -->
+					<nav class="nav barlow-c">
+						<ul>
+							<li>
+								<a href="/">Product</a>
+							</li>
+							<li>
+								<a href="/">Features</a>
+							</li>
+							<li>
+								<a href="/">Pricing</a>
+							</li>
+						</ul>
+						<a href="/" class="login">Login</a>
+					</nav>
+				</div>
+			</header>
+			<!-- content -->
+			<section class="content">
+				<div class="container">
+					<!-- image -->
+					<img
+						class="content__image"
+						src="./images/illustration-devices.svg"
+						alt="devices illustration"
+					/>
+					<!-- text -->
+					<div class="content__text barlow-c">
+						<p class="subtitle">Monograph Dashboard</p>
+						<h2 class="title">Powerful insights into your team</h2>
+						<p class="desc barlow">
+							Project planning and time tracking for agile teams
+						</p>
+						<button class="btn cta-btn">Schedule a demo</button>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- script -->
+		<!-- main -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+/* ================================
+  All Common Styles In This Project
+  ================================ */
+body{
+  // text  
+  --light-red:#ff5c5c;
+  --dark-blue:#242942;
+  --dark-gray:#5b5f71;
+  --gray-blue:#a0a1ac;
+  --light-gray:#eef3f6;
+  --white:#fff;
+
+}
+*{
+  text-transform: uppercase;
+
+}
+
+.sr-only{
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  visibility: hidden;
+  width: 1px;height: 10px;
+}
+
+a{
+  color: var(--dark-blue);      
+  transition: all .9s ;
+}
+.nav{
+  .login{
+    color: var(--gray-blue);
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      top: 50%;
+      left: -30px;
+      border-radius: 5px;
+      background-color: var(--gray-blue);
+      visibility: hidden;
+      @include tablet{
+        visibility: visible;
+      }
+    }
+
+  }
+}

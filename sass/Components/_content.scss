@@ -1,0 +1,107 @@
+.intro{
+  .content{
+    transform: translateY(-40%);
+    .content__image{      
+      transform: translateX(20%);
+    }
+    .content__text{
+      transform: translateY(40%);
+      padding-right: 20px;
+      .subtitle{
+        vertical-align: middle;
+        color: var(--gray-blue);
+        letter-spacing: 5px;
+        font-size: 16px;
+        &::before{
+          content: "New";
+          letter-spacing: 0;          
+          background-color: var(--dark-blue);
+          color: var(--white);
+          padding: 0.3em 0.4em;
+          border-radius: 39% 61% 66% 34% / 32% 43% 57% 68%;
+          margin-right: 10px;
+          transition: all .3s;
+        }
+      }
+      .title{
+        color: var(--dark-blue);
+        font-size: 2.3rem;
+        line-height: 1;
+        margin: 10px 0;
+      }
+      .desc{
+        color: var(--dark-gray);
+        line-height: 1.5;
+        text-transform: none;
+        padding-right: 30px;    
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// tablet view
+@include tablet{
+  .intro{    
+    .content{
+      transform: translateY(20%);
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+      .content__image{
+        transform: translateX(35%);
+        order: 2;
+      }
+      .content__text{
+        transform: translateY(0%);
+        padding-right: 0px;
+        order: 1;
+      }
+    }
+  } 
+}
+// laptop  view
+@include laptop{
+  .intro{    
+    .content{
+      padding-top: 50px;
+      .container{
+        max-width: 100vw;
+        margin: 0;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+      }
+      .content__image{
+        grid-column: -1/ 3;
+      }
+      .content__text{
+        grid-column: 1/3;
+        margin-left: 30%;
+      }
+    }
+  } 
+}
+
+// tv view
+@include tv{
+  .intro{    
+    .content{
+      .container{
+      }
+      .content__image{
+        width: 100%;
+        height: 464px;
+        object-fit: cover;
+        object-position: left;       
+        transform: translateX(5%);
+      
+      }
+      .content__text{
+        .title{font-size: 3.3rem;}
+      }
+      .desc{width: 30ch;padding: 10px 0 20px;}
+    }
+  } 
+}

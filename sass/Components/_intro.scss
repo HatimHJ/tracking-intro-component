@@ -1,0 +1,20 @@
+.intro{
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  &::before{
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -50px;
+    width: 50%;
+    height: 50%;
+    background: var(--light-gray);
+    border-radius: 50px;
+    z-index: -10;
+  }
+}
+
+
+@import './navbar';
+@import './content';
